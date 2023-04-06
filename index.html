@@ -17,21 +17,11 @@
             border-bottom-right-radius: 10px;
     }
     
-    @media only screen and (max-width: 720px){
+    @media only screen and (orientation: portrait) {
       .container {
-            display: inline-block;
-            width: 100%;
-            height: auto;
-            margin: 1%;
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-            background-color: #f9f9f9;
-            box-shadow: 0 0 2vw #ccc;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-          }
-        }
+        flex-basis: 100%;
+      }
+    }
   .parent {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +69,7 @@
     <div class="container" style = "border-top: 2vw solid rgb(43, 192, 68);">
         <img src="image3.jpeg">
         <p>
-            <span style="font-size: 2vw;"></span>Design a new product<br>
+            <span style="font-size: 2vw;">Design a new product</span><br>
             <span style="font-size: 1.5vw;">Launch an MVP with a best in class user experience</span>
           </p>
     </div>
