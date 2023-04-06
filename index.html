@@ -16,10 +16,25 @@
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
     }
-   
     
+    @media only screen and (max-width: 450px){
+      .container {
+            display: inline-block;
+            width: 50%;
+            height: auto;
+            margin: 1%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 2vw #ccc;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+        }
   .parent {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     }
     img {
